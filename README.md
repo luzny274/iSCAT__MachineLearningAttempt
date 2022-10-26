@@ -6,10 +6,10 @@ This is an attempt to simulate images in the iSCAT microscope and then train som
 ### Sample Generation
 We can approximate the iSCAT image as a convolution between a Point spread function and a sample. Putting an image of nanoparticle or microtubule to some speckle background is then additive, which allows us to optimize the process.
 
-We generated Point spread function using [Piscat](https://piscat.readthedocs.io/).
+We generated Point spread function using [Piscat](https://piscat.readthedocs.io/). To create the simulated image we then add speckle pattern with nanoparticles and microtubules, then we apply three different types of noises (add some out focus particles, perlin noise and most importantly poisson noise).
 
 #### speckleGen.py
-Generates speckle patterns that are then used by other scripts for background.
+Simulates glass roughness and convolves it with PSF to generate speckle patterns that are then used by other scripts for background.
 
 #### sampleGen.py
 Generates images with focus classification.
