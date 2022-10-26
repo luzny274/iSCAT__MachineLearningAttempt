@@ -31,3 +31,5 @@ Training and testing Deeplab and Unet for microtubule localization.
 
 ## Results
 Resulted models work well on the simulated data, but not so well on real life iSCAT measurements.
+
+![|Image segmentation](fig.png)
